@@ -1,4 +1,8 @@
-from Sistema import Usuario, Profesional, DatosVisita, DetalleVisita
+from usuario import Usuario
+from profesional import Profesional
+from DatosVisita import DatosVisita
+from DetalleVisita import DetalleVisita
+
 
 def main():
     # aca inicializo ambos objetos
