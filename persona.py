@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Persona(ABC):
-    def __init__(self, nombre, apellido, dni): # el __init__ lo uso como constructor y me permite inicializar los atributos de la clase
+    def __init__(self, nombre, apellido, dni):  # el __init__ lo uso como constructor y me permite inicializar los atributos de la clase
         self._nombre = nombre # con el __ estoy encapsulando los atributos haciendolos privados
         self._apellido = apellido
         self._dni = dni
@@ -15,7 +15,7 @@ class Persona(ABC):
 
     def mostrar_dni(self):
         return self._dni
-    
+
     # metodo abstracto para que las clases hijas lo puedan sobreescribir
     @abstractmethod
     def ingresar_datos(self):

@@ -1,6 +1,5 @@
-class DatosVisita():
-
-    def __init__(self, dia="", hora="", monto=""): #constructor para inicializar atributo
+class DatosVisita:
+    def __init__(self, dia="", hora="", monto=""):  #constructor para inicializar los atributos
         self._dia = dia
         self._hora = hora
         self._monto = monto

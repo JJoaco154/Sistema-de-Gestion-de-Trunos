@@ -3,6 +3,7 @@ from persona import Persona
 class Profesional(Persona):
     def __init__(self, nombre="", apellido="", dni=""):
         super().__init__(nombre, apellido, dni) # esto funciona igual que en la clase usuario
+        self._especialidad = "" # creo el atributo especialidad
 
     # esto tambien funciona igual que la clase usuario
     def ingresar_datos(self):
@@ -14,3 +15,4 @@ class Profesional(Persona):
     # esto permite retornar el la esoecialidad del profacional
     def mostrar_especialidad(self):
         return self._especialidad
+
